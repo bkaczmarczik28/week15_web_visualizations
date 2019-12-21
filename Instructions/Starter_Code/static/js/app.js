@@ -35,7 +35,7 @@ function updateBarGraph(data){
 
     // create an array that adds OTU to the to OTU ids:
     var slicedOTU_idText=[];
-    for (var i=0; i <= slicedOTU_ids.length; i++) {
+    for (var i=0; i < slicedOTU_ids.length; i++) {
         slicedOTU_idText[i]=("OTU "+ slicedOTU_ids[i])
     };
 
@@ -107,6 +107,7 @@ function updateBubbleChart(data) {
     {
         title: "Bubble Chart of Test Subject " + subjectID,
         width: 1000,
+        height: 700,
         xaxis: {title:`OTU ID`},
         yaxis: {title:`OTU Sample Value Count`}
     }
